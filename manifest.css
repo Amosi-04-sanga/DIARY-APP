@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 4px;
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px auto;
+}
+
+.diary {
+  overflow: hidden;
+  width: 400px;
+  margin: 20px auto;
+  background-color: #f0eeea;
+}
+
+.diary__notification {
+  width: 80%;
+  padding: 2px;
+  border-radius: 3px;
+  height: 1.5rem;
+}
+
+.diary__notification.success {
+  background-color: #a6d34a;
+  color: black;
+}
+
+.diary__notification.danger {
+  background-color: #e78888;
+  color: black;
+}
+
+.diary__btn {
+  padding: 5px 6px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.diary__btn:hover {
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+  -webkit-box-shadow: 0 0 5px 0 #a9a7a7;
+          box-shadow: 0 0 5px 0 #a9a7a7;
+}
+
+.diary__form {
+  width: 80%;
+  margin: auto;
+}
+
+.diary__wrapper {
+  margin: 10px 0;
+}
+
+.diary__contents {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.diary__article {
+  margin: 10px 0;
+  -webkit-box-shadow: 0 0 5px 0 #a9a7a7;
+          box-shadow: 0 0 5px 0 #a9a7a7;
+  padding: 4px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.diary__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diary__flex-margin {
+  margin: 12px 0 1.5rem;
+}
+
+.diary__delete {
+  margin-left: 2px;
+}
+
+.diary__delete, .diary__edit {
+  padding: 2px 4px;
+  background-color: #f0eeea;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+
+.diary__delete:hover, .diary__edit:hover {
+  -webkit-box-shadow: 0 0 5px 0 #a9a7a7;
+          box-shadow: 0 0 5px 0 #a9a7a7;
+}
+
+.diary__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
+
+.diary__content {
+  text-indent: 20px;
+}
+
+.diary__content::first-letter {
+  font-size: 1.4rem;
+}
+
+#text-content {
+  resize: none;
+}
+
+#buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=manifest.css.map */
