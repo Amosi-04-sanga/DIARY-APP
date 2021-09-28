@@ -1,0 +1,116 @@
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+.diary {
+    overflow: hidden; // to prevent margin collapse
+    width: 400px;
+    margin: 20px auto;
+    background-color: $wheat-color;
+
+    &__notification {
+        width: 80%;
+        padding: 2px;
+        border-radius: 3px;
+        height: 1.5rem;
+    }
+    
+    &__notification.success {
+        background-color: hsl(80, 61%, 56%);
+        color: black;
+    }
+
+    &__notification.danger {
+        background-color: hsl(0, 66%, 72%);
+        color: black;
+    }
+
+    &__btn {
+        padding: 5px 6px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 900;
+}
+
+    &__btn:hover {
+       transition: box-shadow .3s ease-in-out;
+       @include shadow 
+    }
+
+    &__form {
+        width: 80%;
+        margin: auto;
+    }
+
+    &__wrapper {
+        margin: 10px 0;
+    }
+
+
+    &__contents {
+        width: 80%;
+        margin: $vertical-margin auto;
+    }
+
+    &__article {
+        margin: 10px 0;
+        @include shadow;
+        padding: 4px;
+        background-color: white;
+        border-radius: 6px;
+    }
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__flex-margin {
+        margin: 12px 0 1.5rem;
+    }
+ 
+    &__delete {
+        margin-left: 2px;
+    }
+
+    &__delete,
+    &__edit {
+      padding: 2px 4px;
+      background-color: $wheat-color;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      border-radius: 2px;
+    }
+
+    &__delete:hover,
+    &__edit:hover {
+       @include shadow;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__content {
+        text-indent: 20px;
+    }
+    &__content::first-letter {
+        font-size: 1.4rem;
+    }
+
+}
+
+#text-content {
+    resize: none;
+}
+
+#buttons {
+    display: flex;
+}
+
+
+
