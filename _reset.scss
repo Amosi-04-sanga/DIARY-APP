@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 4px;
+  
+}
+
+
+
