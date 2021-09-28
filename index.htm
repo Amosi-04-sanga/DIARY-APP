@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diary app with vanilla javascript.</title>
+    <link rel="stylesheet" href="manifest.css">
+</head>
+<body>
+    
+    <!-- header -->
+    <h1 class="heading">keep memory every day</h1>
+
+    <!-- diary container -->
+    <div class="diary">
+        <form class="diary__form">
+            <!-- heading input-->
+            <div class="diary__wrapper">
+                <input placeholder="Enter heading here..." id="heading-input"  type="text" class="diary__heading-input">
+            </div>
+            <!-- textarea -->
+            <div class="diary__wrapper">
+               <textarea placeholder="Enter content here..." name="text" id="text-content" cols="30" rows="10"></textarea>
+            </div>
+            <div class="diary__flex">
+                <p class="diary__notification"></p>
+                <button type="submit" class="diary__btn">add</button>
+            </div>
+        </form>
+
+
+        <div class="diary__contents">
+           
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
